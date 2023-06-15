@@ -48,6 +48,9 @@ body {
     font-size: 1rem;
     border: 3rem;
   }
+  .homeLogo:hover {
+    border-left: 2px solid #ADFC31;
+  }
   .homeLogo img {
     display: inline-block;
     width: 1.5rem;
@@ -61,6 +64,7 @@ body {
   }
   .logoText:hover {
     color: #ffffff;
+    font-size: 1.2rem;
   }
   .playlist {
     margin: 1rem;
@@ -78,6 +82,7 @@ body {
   }
   .pl-text:hover {
     color: #ffffff;
+    font-size: 1.2rem;
   }
   .playlist p {
     color: #717171;
@@ -85,11 +90,17 @@ body {
   }
   .playlist p:hover {
     color: #ffffff;
+    border-bottom: 1px dashed #ADFC31;
+    font-size: 1.2rem;
   }
   .navbar-bottom {
     margin-left: 1rem;
     color: #717171;
     align-self: baseline;
+  }
+  .navbar-bottom:hover {
+    color: #ffffff;
+    font-size: 1.2rem;
   }
   
   /* Barra superiore */
@@ -105,28 +116,31 @@ body {
   
 .main-content-container {
     width: 100%;
-    overflow: auto;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     background-color: var(--color-first);
 }
 .menu {
     margin: auto;
-    justify-content: space-around;
-    
+    position: fixed;
+    background-color: var(--color-first);
 }
 .menu ul {
     display: inline-flex;
     font-size: .7rem;
     list-style: none;
     color: #717171;
+    
 }
 .menu li {
-    padding: 1rem;
+    padding: 1rem; 
     
 }
 .menu li:hover {
     color: #ffffff;
+    border-bottom: 2px solid #ADFC31;
+    font-size: .9rem;
 }
 
 
