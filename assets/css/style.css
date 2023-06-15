@@ -1,0 +1,146 @@
+:root {
+    --color-first: #131822;
+    --color-second: #000000;
+    --color-third: #080B12;
+    --color-fourth: #282828;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.main-container {
+    color:white;
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+  }
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    overflow: auto;
+}
+
+.navbar {
+    background-color: var(--color-second);
+    width: 200px;
+    overflow: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #spotifyLogo {
+    padding: 1rem 3rem 1rem 1rem;
+  }
+  .homeLogo {
+    display: flex;
+    font-size: 1rem;
+    border: 3rem;
+  }
+  .homeLogo img {
+    display: inline-block;
+    width: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .logoText {
+    font-size: 1rem;
+    margin: auto 0;
+    color: #717171; 
+  }
+  .logoText:hover {
+    color: #ffffff;
+  }
+  .playlist {
+    margin: 1rem;
+  }
+  .pl-icon {
+    font-size: 3rem;
+    display: flex;
+    margin-top: 1rem;
+  }
+  .pl-text {
+    font-size: 1rem;
+    display: inline-block;
+    margin: auto;
+    color: #717171; 
+  }
+  .pl-text:hover {
+    color: #ffffff;
+  }
+  .playlist p {
+    color: #717171;
+    line-height: 3rem;
+  }
+  .playlist p:hover {
+    color: #ffffff;
+  }
+  .navbar-bottom {
+    margin-left: 1rem;
+    color: #717171;
+    align-self: baseline;
+  }
+  
+  /* Barra superiore */
+
+.sup-navbar {
+    width: 100%;
+    overflow: auto;
+    height: 5rem;
+    background-color: #080B12;
+  }
+
+/* Contenitore principale*/  
+  
+.main-content-container {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-first);
+}
+.menu {
+    margin: auto;
+    justify-content: space-around;
+    
+}
+.menu ul {
+    display: inline-flex;
+    font-size: .7rem;
+    list-style: none;
+    color: #717171;
+}
+.menu li {
+    padding: 1rem;
+    
+}
+.menu li:hover {
+    color: #ffffff;
+}
+
+
+/* Barra comandi */
+
+.play-nav-container {
+    display: flex;
+    background-color: var(--color-fourth);
+  }
+.play-nav-container img {
+    width: 4rem;
+    margin: 2rem;
+}
+.play-nav-container p {
+    margin: auto;
+    flex-direction: column;
+}
