@@ -31,7 +31,7 @@ body {
     overflow: auto;
 }
 
-.navbar {
+  .navbar {
     background-color: var(--color-second);
     width: 200px;
     overflow: auto;
@@ -41,6 +41,12 @@ body {
   }
   .spotifyLogo {
     padding: 1rem 3rem 1rem 1rem;
+  }
+  .logo-small {
+    width: 6rem;
+    padding: 1rem 3rem 1rem 1rem;
+    display: none;
+    
   }
   .homeLogo {
     display: flex;
@@ -94,7 +100,9 @@ body {
     font-size: 1.2rem;
   }
   .navbar-bottom {
+    font-size: 1rem;
     margin-left: 1rem;
+    margin-right: 1rem;
     color: #717171;
   }
   .navbar-bottom:hover {
@@ -109,7 +117,7 @@ body {
     display: flex;
     justify-content: flex-end;
     overflow: auto;
-    height: 9rem;
+    height: 5rem;
     background-color: #080B12;
   }
 .btn {
@@ -125,6 +133,28 @@ body {
     padding: .7rem 3rem .7rem 3rem;
 }
 
+/* barra menu */
+
+.menu {
+    background-color: var(--color-first);
+    justify-content: center;
+}
+.menu ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: .7rem;
+    list-style: none;
+    color: #717171;
+}
+.menu li {
+    padding: 1rem;  
+}
+.menu li:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ADFC31;
+    font-size: .9rem;
+}
+
 /* Contenitore principale*/  
   
 .main-content-container {
@@ -134,28 +164,19 @@ body {
     flex-direction: column;
     background-color: var(--color-first);
 }
-.menu {
-    background-color: var(--color-first);
-    justify-content: center;
-    
+
+.sub-container {
+    width: 100%;
+    border: 2px dashed red;
+    height: 300px;
 }
-.menu ul {
-    display: inline-flex;
+.sub-container.cont-cards {
+    border: 2px dashed red;
     flex-wrap: wrap;
-    font-size: .7rem;
-    list-style: none;
-    color: #717171;
-    
 }
-.menu li {
-    padding: 1rem; 
-    
-}
-.menu li:hover {
-    color: #ffffff;
-    border-bottom: 2px solid #ADFC31;
-    font-size: .9rem;
-}
+
+
+
 
 
 /* Barra comandi */
