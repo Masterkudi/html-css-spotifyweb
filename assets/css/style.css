@@ -41,12 +41,6 @@ body {
   }
   .spotifyLogo {
     padding: 1rem 3rem 1rem 1rem;
-    position: relative;
-    
-  }
-  .spotifyLogoSmall {
-    width: 40px;
-    position: absolute;
   }
   .homeLogo {
     display: flex;
