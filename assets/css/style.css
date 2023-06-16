@@ -38,10 +38,15 @@ body {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+  }
+  .spotifyLogo {
+    padding: 1rem 3rem 1rem 1rem;
+    position: relative;
     
   }
-  #spotifyLogo {
-    padding: 1rem 3rem 1rem 1rem;
+  .spotifyLogoSmall {
+    width: 40px;
+    position: absolute;
   }
   .homeLogo {
     display: flex;
@@ -84,11 +89,11 @@ body {
     color: #ffffff;
     font-size: 1.2rem;
   }
-  .playlist p {
+  .pl-list {
     color: #717171;
     line-height: 3rem;
   }
-  .playlist p:hover {
+  .pl-list p:hover {
     color: #ffffff;
     border-bottom: 1px dashed #ADFC31;
     font-size: 1.2rem;
@@ -96,7 +101,6 @@ body {
   .navbar-bottom {
     margin-left: 1rem;
     color: #717171;
-    align-self: baseline;
   }
   .navbar-bottom:hover {
     color: #ffffff;
@@ -107,27 +111,42 @@ body {
 
 .sup-navbar {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
     overflow: auto;
-    height: 5rem;
+    height: 9rem;
     background-color: #080B12;
   }
+.btn {
+    margin: 2rem;
+    padding: .5rem 2rem .5rem 2rem;
+    align-self: center;
+    border-radius: 50px;
+    color: #717171;
+    background-color: #080B12;
+}
+.btn:hover {
+    color: #ffffff;
+    padding: .7rem 3rem .7rem 3rem;
+}
 
 /* Contenitore principale*/  
   
 .main-content-container {
     width: 100%;
-    overflow-y: scroll;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     background-color: var(--color-first);
 }
 .menu {
-    margin: auto;
-    position: fixed;
     background-color: var(--color-first);
+    justify-content: center;
+    
 }
 .menu ul {
     display: inline-flex;
+    flex-wrap: wrap;
     font-size: .7rem;
     list-style: none;
     color: #717171;
@@ -156,5 +175,4 @@ body {
 }
 .play-nav-container p {
     margin: auto;
-    flex-direction: column;
 }
