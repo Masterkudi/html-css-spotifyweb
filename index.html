@@ -15,10 +15,10 @@
         <!-- Barra laterale -->
         <nav class="navbar">
             <div class="spotifyLogo">
-                <img  src="assets/img/logo.svg" alt="spotify logo" class="logo-large">
+                <img src="assets/img/logo.svg" alt="spotify logo" class="logo-large">
                 <img src="assets/img/logo-small.svg" alt="spotify logo small" class="logo-small">
             </div>
-            
+
             <div class="homeLogo"><img src="assets/img/home.svg" alt="">
                 <span class="logoText">Home</span>
             </div>
@@ -50,7 +50,7 @@
             <div class="navbar-bottom">
                 <i class="fa-solid fa-circle-arrow-down" style="margin: .5rem;"></i> Installa app
                 <hr>
-                <i class="fa-regular fa-user" style="margin: .5rem;"></i> John Doe
+                <i class="fa-solid fa-circle-user" style="margin: .5rem;"></i> John Doe
             </div>
         </nav>
         <!-- Contenuto dell'app -->
@@ -72,20 +72,65 @@
                 <div class="sub-container">
                     <h2>Recently played</h2>
                     <div class="cont-cards">
-                        <img src="assets/img/sinister.jpeg" alt="">
-                        <img src="assets/img/sinister.jpeg" alt="">
-                        <img src="assets/img/sinister.jpeg" alt="">
-                        <img src="assets/img/sinister.jpeg" alt="">
-                        <img src="assets/img/sinister.jpeg" alt="">
-                        <img src="assets/img/sinister.jpeg" alt="">
+                        <div class="sub-container img">
+                            <img src="assets/img/metal_lifting.jpg" alt="">
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="sub-container img">
+                            <img src="assets/img/stranger.jpeg" alt="">
+                            <h4>Stranger Things, Vol. 1 (a Netflix original Series Soundtrack)</h4>
+                            <p>Kyle Dixon & Michael Stein</p>
+                        </div>
+                        <div class="sub-container img">
+                            <img src="assets/img/aquietplace.jpeg" alt="">
+                            <h4>A Quiet Place</h4>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="sub-container img">
+                            <img src="assets/img/split.jpeg" alt="">
+                            <h4>Split</h4>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="sub-container img">
+                            <img src="assets/img/cure.jpeg" alt="">
+                            <h4>A Cure for Wellness</h4>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="sub-container img">
+                            <img src="assets/img/sinister.jpeg" alt="">
+                            <h4>Sinister</h4>
+                            <p>Subtitle</p>
+                        </div>
                     </div>
-                   
                 </div>
                 <div class="sub-container">
-
+                    <h2>Creato per John Doe</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    <div class="cont-cards">
+                        <div class="sub-container img">
+                            <img src="assets/img/radar.jpeg" alt="">
+                            <h4>Release Radar</h4>
+                        </div>
+                        <div class="sub-container img">
+                            <img src="assets/img/mixdaily.jpeg" alt="">
+                            <h4>Daily Mix 1</h4>
+                        </div>
+                    </div>
                 </div>
                 <div class="sub-container">
-
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    <div class="cont-cards">
+                        <div class="sub-container img">
+                            <img src="assets/img/young.jpeg" class="img-circle" alt="">
+                            <h4>Lana Del Rey</h4>
+                        </div>
+                        <div class="sub-container img">
+                            <img src="assets/img/einaudi.jpeg" class="img-circle" alt="">
+                            <h4>Ludovico Einaudi</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -94,10 +139,45 @@
 
     <!-- Barra in basso per pulsanti play -->
     <div class="play-nav-container">
-        <img src="assets/img/sinister.jpeg" alt="">
-        <p>Sinister</p><br>
-        <p>Brano nome</p>
-    </div>
+        <div class="play-nav-left">
+            <img src="assets/img/sinister.jpeg" alt="">
+            <div class="play-nav-left-text">
+                <h4>Sinister</h4>
+                <p>Brano nome</p>
+            </div>
+            <div class="play-nav-left-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+        </div>
+        <div class="play-nav-center">
+            <div class="app-controls">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play" id="play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-sharp fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="progress-bar">
+                <p>0:25</p>
+                <div class="pb-grey">
+                    <div class="pb-light-grey"></div>
+                </div>
+                <p>4:35</p>
+            </div>
+        </div>
+
+        <div class="play-nav-right">
+            <div class="app-controls-right">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="pb-grey-right">
+                <div class="pb-light-grey-right"></div>
+            </div>
+
+        </div>
 
 
 

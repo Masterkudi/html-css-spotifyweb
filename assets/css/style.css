@@ -137,7 +137,6 @@ body {
 
 .menu {
     background-color: var(--color-first);
-    justify-content: center;
 }
 .menu ul {
     display: inline-flex;
@@ -147,6 +146,7 @@ body {
     color: #717171;
 }
 .menu li {
+    align-self: center;
     padding: 1rem;  
 }
 .menu li:hover {
@@ -164,31 +164,130 @@ body {
     flex-direction: column;
     background-color: var(--color-first);
 }
-
 .sub-container {
     width: 100%;
-    border: 2px dashed red;
-    height: 300px;
 }
-.sub-container.cont-cards {
-    border: 2px dashed red;
+.sub-container h2 {
+    margin: 20px;
+}
+.sub-container p {
+    margin: 20px;
+    color: #717171;
+}
+.sub-container .cont-cards {
+    margin: 20px;
+    display: flex;
     flex-wrap: wrap;
 }
-
-
-
-
+.sub-container .img {
+    margin: 10px;
+    width: calc((100% / 6) - 20px);
+    display: flex;
+    flex-direction: column;
+}
+.cont-cards h4 {
+    margin-top: 1rem;
+    text-align: center;
+}
+.cont-cards p {
+    text-align: center;
+}
+.img-circle {
+    border-radius: 50%;
+}
 
 /* Barra comandi */
 
 .play-nav-container {
-    display: flex;
     background-color: var(--color-fourth);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-.play-nav-container img {
-    width: 4rem;
+.play-nav-left {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
     margin: 2rem;
+    color: #717171;
 }
-.play-nav-container p {
-    margin: auto;
+.play-nav-left img {
+    width: 5rem;
+}
+.play-nav-left-text {
+    margin: 1rem;
+}
+.play-nav-left-icons {
+    margin: 2rem;
+    font-size: 1rem;
+}
+.play-nav-left-icons:hover {
+    color: #ffffff;
+}
+.play-nav-left-text:hover h4 {
+    color: #ffffff;
+}
+.play-nav-center {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.app-controls {
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #ffffff;
+}
+.app-controls i {
+    padding: 1rem;
+}
+#play {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: row;
+}
+.progress-bar p {
+    color: #ffffff;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.pb-grey {
+    align-self: center;
+    height: 7px;
+    width: 300px;
+    background-color: #5A5A5A;
+}
+.pb-light-grey {
+    align-self: center;
+    height: 7px;
+    width: 18%;
+    background-color: #C1C1C1;
+}
+.play-nav-right {
+    display: flex;
+    flex-direction: row;
+}
+.app-controls-right {
+    align-self: center;
+    color: #ffffff;
+    font-size: 1rem;
+}
+.app-controls-right i {
+    padding: 1rem;
+}
+
+.pb-grey-right {
+    align-self: center;
+    height: 7px;
+    width: 150px;
+    background-color: #5A5A5A;
+}
+.pb-light-grey-right {
+    align-self: center;
+    height: 7px;
+    width: 18%;
+    background-color: #C1C1C1;
 }
