@@ -9,21 +9,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-  
+}
+
 .main-container {
-    color:white;
+    color: white;
     flex-grow: 1;
     overflow: auto;
     display: flex;
-  }
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -31,95 +32,131 @@ body {
     overflow: auto;
 }
 
-  .navbar {
+.navbar {
     background-color: var(--color-second);
-    width: 200px;
+    width: 15vw;
     overflow: auto;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-  }
-  .spotifyLogo {
-    padding: 1rem 3rem 1rem 1rem;
-  }
-  .logo-small {
-    width: 6rem;
-    padding: 1rem 3rem 1rem 1rem;
-    display: none;
-    
-  }
-  .homeLogo {
+}
+
+.spotifyLogo .logo-large {
+    width: 100%;
+    padding: 1rem;
+}
+
+.spotifyLogo .logo-small {
+    width: 4rem;
+    padding: 1rem;
+    display: none; 
+}
+
+.homeLogo {
     display: flex;
     font-size: 1rem;
     border: 3rem;
-  }
-  .homeLogo:hover {
+}
+
+.homeLogo:hover {
     border-left: 2px solid #ADFC31;
-  }
-  .homeLogo img {
+}
+
+.homeLogo img {
     display: inline-block;
     width: 1.5rem;
     margin: 1rem;
     font-size: 2rem;
-  }
-  .logoText {
+}
+
+.logoText {
     font-size: 1rem;
     margin: auto 0;
-    color: #717171; 
-  }
-  .logoText:hover {
+    color: #717171;
+}
+
+.logoText:hover {
     color: #ffffff;
     font-size: 1.2rem;
-  }
-  .playlist {
+}
+
+.playlist {
     margin: 1rem;
     flex-grow: 1;
-  }
-  .pl-icon {
+}
+
+.pl-icon {
     font-size: 3rem;
     display: flex;
     margin-top: 1rem;
-  }
-  .pl-text {
+}
+
+.pl-text {
     font-size: 1rem;
     display: inline-block;
     margin: auto;
-    color: #717171; 
-  }
-  .pl-text:hover {
+    color: #717171;
+}
+
+.pl-text:hover {
     color: #ffffff;
     font-size: 1.2rem;
-  }
-  .pl-list {
+}
+
+.pl-list {
     color: #717171;
     line-height: 3rem;
-  }
-  .pl-list p:hover {
+}
+
+.pl-list p:hover {
     color: #ffffff;
     border-bottom: 1px dashed #ADFC31;
     font-size: 1.2rem;
-  }
-  .navbar-bottom {
+}
+
+.navbar-bottom {
     font-size: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     color: #717171;
-  }
-  .navbar-bottom:hover {
+}
+.navbar-bottom i {
+    font-size: 1.5rem;
+}
+
+.nav-bot-download {
+    display: flex;
+    flex-direction: row;
+}
+.nav-bot-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-bottom p {
+    margin: auto 0;
+}
+
+.nav-bot-name:hover {
     color: #ffffff;
     font-size: 1.2rem;
-  }
-  
-  /* Barra superiore */
+}
+.nav-bot-download:hover {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+/* Barra superiore */
 
 .sup-navbar {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     overflow: auto;
-    height: 5rem;
+    height: 10vh;
     background-color: #080B12;
-  }
+}
+
 .btn {
     margin: 2rem;
     padding: .5rem 2rem .5rem 2rem;
@@ -128,6 +165,7 @@ body {
     color: #717171;
     background-color: #080B12;
 }
+
 .btn:hover {
     color: #ffffff;
     padding: .7rem 3rem .7rem 3rem;
@@ -135,9 +173,11 @@ body {
 
 /* barra menu */
 
+
 .menu {
     background-color: var(--color-first);
 }
+
 .menu ul {
     display: inline-flex;
     flex-wrap: wrap;
@@ -145,18 +185,20 @@ body {
     list-style: none;
     color: #717171;
 }
+
 .menu li {
     align-self: center;
-    padding: 1rem;  
+    padding: 1rem;
 }
+
 .menu li:hover {
     color: #ffffff;
     border-bottom: 2px solid #ADFC31;
     font-size: .9rem;
 }
 
-/* Contenitore principale*/  
-  
+/* Contenitore principale*/
+
 .main-content-container {
     width: 100%;
     overflow: auto;
@@ -164,34 +206,48 @@ body {
     flex-direction: column;
     background-color: var(--color-first);
 }
+
 .sub-container {
     width: 100%;
 }
+
 .sub-container h2 {
     margin: 20px;
 }
+
 .sub-container p {
     margin: 20px;
     color: #717171;
 }
+
 .sub-container .cont-cards {
     margin: 20px;
     display: flex;
-    flex-wrap: wrap;
 }
+
 .sub-container .img {
     margin: 10px;
     width: calc((100% / 6) - 20px);
     display: flex;
     flex-direction: column;
 }
+
+.sub-container-img-button {
+    position: absolute;
+    font-size: 5rem;
+    display: inline-block;
+    align-self: center;
+}
+
 .cont-cards h4 {
     margin-top: 1rem;
     text-align: center;
 }
+
 .cont-cards p {
     text-align: center;
 }
+
 .img-circle {
     border-radius: 50%;
 }
@@ -203,78 +259,110 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
+}
+
 .play-nav-left {
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin: 2rem;
+    margin: 1rem;
     color: #717171;
 }
+
 .play-nav-left img {
-    width: 5rem;
+    width: 9vw;
 }
+
 .play-nav-left-text {
     margin: 1rem;
+    margin: 2rem 1rem;
 }
+
 .play-nav-left-icons {
-    margin: 2rem;
+    margin: 2rem 1rem;
     font-size: 1rem;
 }
+
 .play-nav-left-icons:hover {
     color: #ffffff;
 }
+
 .play-nav-left-text:hover h4 {
     color: #ffffff;
 }
+
 .play-nav-center {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin: 1rem 1rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
+
 .app-controls {
     margin: 0 auto;
     font-size: 1rem;
     color: #ffffff;
 }
+
 .app-controls i {
     padding: 1rem;
 }
+
+.app-controls i:hover {
+    font-size: 1.3rem;
+}
+
 #play {
     font-size: 2rem;
     padding: 1rem;
 }
+
+#play:hover {
+    font-size: 2.3rem;
+}
+
 .progress-bar {
+    margin: 1rem 0;
     display: flex;
     flex-direction: row;
 }
+
 .progress-bar p {
     color: #ffffff;
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
 .pb-grey {
     align-self: center;
     height: 7px;
-    width: 300px;
+    width: 25vw;
     background-color: #5A5A5A;
 }
+
 .pb-light-grey {
     align-self: center;
     height: 7px;
     width: 18%;
     background-color: #C1C1C1;
 }
+
+.pb-light-grey:hover {
+    background-color: #ADFC31;
+}
+
 .play-nav-right {
+    margin: 1rem;
     display: flex;
     flex-direction: row;
 }
+
 .app-controls-right {
     align-self: center;
     color: #ffffff;
     font-size: 1rem;
 }
+
 .app-controls-right i {
     padding: 1rem;
 }
@@ -282,12 +370,48 @@ body {
 .pb-grey-right {
     align-self: center;
     height: 7px;
-    width: 150px;
+    width: 10vw;
     background-color: #5A5A5A;
 }
+
 .pb-light-grey-right {
     align-self: center;
     height: 7px;
     width: 18%;
     background-color: #C1C1C1;
+}
+
+.pb-light-grey-right:hover {
+    background-color: #ADFC31;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+
+} 
+@media screen and (max-width: 960px) {
+
+}
+@media screen and (max-width: 720px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    .spotifyLogo .logo-large {
+        display: none;
+    }
+    .spotifyLogo .logo-small {
+        display: block;
+    }
+    .logoText, .pl-list, h4, .pl-text {
+        display: none;
+    }
+    .pl-icon {
+        font-size: 2rem;
+    }
+    .navbar-bottom p{
+        display: none;
+    }
+
 }
