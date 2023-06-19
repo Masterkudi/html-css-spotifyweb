@@ -415,12 +415,15 @@ body {
 
 @media screen and (max-width: 1200px) {
     .sub-container .img {
-        width: calc((100% / 3) - 20px);
+        width: calc((100% / 4) - 20px);
     }
-
 }
 
-@media screen and (max-width: 960px) {}
+@media screen and (max-width: 960px) {
+    .sub-container .img {
+        width: calc((100% / 3) - 20px);
+    }
+}
 
 @media screen and (max-width: 720px) {
     .sub-container .img {
@@ -431,7 +434,7 @@ body {
 @media screen and (max-width: 500px) {
 
     .sub-container .img {
-        width: calc((100% / 1) - 20px);
+        width: calc((100% / 2) - 20px);
     }
 
     .navbar {
