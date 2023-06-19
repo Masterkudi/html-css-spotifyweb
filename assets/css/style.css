@@ -49,7 +49,7 @@ body {
 .spotifyLogo .logo-small {
     width: 4rem;
     padding: 1rem;
-    display: none; 
+    display: none;
 }
 
 .homeLogo {
@@ -120,6 +120,7 @@ body {
     margin-right: 1rem;
     color: #717171;
 }
+
 .navbar-bottom i {
     font-size: 1.5rem;
 }
@@ -128,6 +129,7 @@ body {
     display: flex;
     flex-direction: row;
 }
+
 .nav-bot-name {
     display: flex;
     flex-direction: row;
@@ -141,6 +143,7 @@ body {
     color: #ffffff;
     font-size: 1.2rem;
 }
+
 .nav-bot-download:hover {
     color: #ffffff;
     font-size: 1.2rem;
@@ -176,6 +179,8 @@ body {
 
 .menu {
     background-color: var(--color-first);
+    display: flex;
+    justify-content: center;
 }
 
 .menu ul {
@@ -233,12 +238,32 @@ body {
     flex-direction: column;
 }
 
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+}
+
 .sub-container-img-button {
     position: absolute;
-    font-size: 5rem;
-    display: inline-block;
-    align-self: center;
+    font-size: 3rem;
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
+
+.img-container:hover .sub-container-img-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .cont-cards h4 {
     margin-top: 1rem;
@@ -293,7 +318,7 @@ body {
 }
 
 .play-nav-center {
-    
+    margin: auto 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -390,46 +415,56 @@ body {
 
 @media screen and (max-width: 1200px) {
     .sub-container .img {
-        width: calc((100% / 4) - 20px);
+        width: calc((100% / 3) - 20px);
     }
-   
-} 
-@media screen and (max-width: 960px) {
 
 }
+
+@media screen and (max-width: 960px) {}
+
 @media screen and (max-width: 720px) {
     .sub-container .img {
         width: calc((100% / 2) - 20px);
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
     .sub-container .img {
-        width: calc((100% / 2) - 20px);
+        width: calc((100% / 1) - 20px);
     }
 
     .navbar {
         width: 70px;
     }
+
     .spotifyLogo .logo-large {
         display: none;
     }
+
     .spotifyLogo .logo-small {
         display: block;
     }
-    .logoText, .pl-list, h4, .pl-text {
+
+    .logoText,
+    .pl-list,
+    h4,
+    .pl-text {
         display: none;
     }
+
     .pl-icon {
         font-size: 2rem;
     }
-    .navbar-bottom p{
+
+    .navbar-bottom p {
         display: none;
     }
+
     .pb-grey {
         width: 15vw;
     }
+
     .app-controls i {
         padding: .3rem;
     }
