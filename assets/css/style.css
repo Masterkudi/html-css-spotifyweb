@@ -263,8 +263,6 @@ body {
     align-items: center;
 }
 
-
-
 .cont-cards h4 {
     margin-top: 1rem;
     text-align: center;
@@ -391,6 +389,9 @@ body {
 
 .app-controls-right i {
     padding: 1rem;
+}
+.app-controls-right i:hover {
+   font-size: 1.3rem; 
 }
 
 .pb-grey-right {
